@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3AD8EF1823E3CB2E0059507E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8EF1723E3CB2E0059507E /* AppDelegate.swift */; };
 		3AD8EF1A23E3CB2E0059507E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8EF1923E3CB2E0059507E /* SceneDelegate.swift */; };
-		3AD8EF1C23E3CB2E0059507E /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8EF1B23E3CB2E0059507E /* FriendsViewController.swift */; };
+		3AD8EF1C23E3CB2E0059507E /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8EF1B23E3CB2E0059507E /* FriendsTableViewController.swift */; };
 		3AD8EF1F23E3CB2E0059507E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD8EF1D23E3CB2E0059507E /* Main.storyboard */; };
 		3AD8EF2123E3CB2F0059507E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD8EF2023E3CB2F0059507E /* Assets.xcassets */; };
 		3AD8EF2423E3CB2F0059507E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD8EF2223E3CB2F0059507E /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		3AD8EF1423E3CB2E0059507E /* HobbyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD8EF1723E3CB2E0059507E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AD8EF1923E3CB2E0059507E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3AD8EF1B23E3CB2E0059507E /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		3AD8EF1B23E3CB2E0059507E /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		3AD8EF1E23E3CB2E0059507E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AD8EF2023E3CB2F0059507E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AD8EF2323E3CB2F0059507E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				3AD8EF1723E3CB2E0059507E /* AppDelegate.swift */,
 				3AD8EF1923E3CB2E0059507E /* SceneDelegate.swift */,
-				3AD8EF1B23E3CB2E0059507E /* FriendsViewController.swift */,
+				3AD8EF1B23E3CB2E0059507E /* FriendsTableViewController.swift */,
 				3AD8EF1D23E3CB2E0059507E /* Main.storyboard */,
 				3AD8EF2023E3CB2F0059507E /* Assets.xcassets */,
 				3AD8EF2223E3CB2F0059507E /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD8EF1C23E3CB2E0059507E /* FriendsViewController.swift in Sources */,
+				3AD8EF1C23E3CB2E0059507E /* FriendsTableViewController.swift in Sources */,
 				3AD8EF1823E3CB2E0059507E /* AppDelegate.swift in Sources */,
 				3AD8EF1A23E3CB2E0059507E /* SceneDelegate.swift in Sources */,
 			);

@@ -10,6 +10,12 @@ import UIKit
 
 class FriendDetailTableViewController: UITableViewController {
 
+    //MARK: - IBOutlets
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var hometownLabel: UILabel!
+    @IBOutlet var hobbiesTextView: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

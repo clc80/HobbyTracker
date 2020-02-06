@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A6C6C2523EBB4BC00276940 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6C6C2423EBB4BC00276940 /* AddFriendViewController.swift */; };
 		3A6C6C2723EBB4D600276940 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6C6C2623EBB4D600276940 /* FriendDetailViewController.swift */; };
+		3A6C6C2B23EBBA5C00276940 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6C6C2A23EBBA5C00276940 /* FriendTableViewCell.swift */; };
+		3A6C6C2F23EBBC6100276940 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6C6C2E23EBBC6100276940 /* Friend.swift */; };
 		3AD8EF1823E3CB2E0059507E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8EF1723E3CB2E0059507E /* AppDelegate.swift */; };
 		3AD8EF1A23E3CB2E0059507E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8EF1923E3CB2E0059507E /* SceneDelegate.swift */; };
 		3AD8EF1C23E3CB2E0059507E /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8EF1B23E3CB2E0059507E /* FriendsTableViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		3A6C6C2423EBB4BC00276940 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		3A6C6C2623EBB4D600276940 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		3A6C6C2A23EBBA5C00276940 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		3A6C6C2E23EBBC6100276940 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		3AD8EF1423E3CB2E0059507E /* HobbyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD8EF1723E3CB2E0059507E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AD8EF1923E3CB2E0059507E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,29 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		3A6C6C2923EBBA3200276940 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A6C6C2A23EBBA5C00276940 /* FriendTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A6C6C2C23EBBC3900276940 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A6C6C2E23EBBC6100276940 /* Friend.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A6C6C2D23EBBC4500276940 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		3AD8EF0B23E3CB2E0059507E = {
 			isa = PBXGroup;
 			children = (
@@ -79,8 +106,11 @@
 		3AD8EF1623E3CB2E0059507E /* HobbyTracker */ = {
 			isa = PBXGroup;
 			children = (
-				3A6C6C2823EBB4E600276940 /* Resources */,
+				3A6C6C2C23EBBC3900276940 /* Model */,
+				3A6C6C2923EBBA3200276940 /* Views */,
+				3A6C6C2D23EBBC4500276940 /* Controller */,
 				3A6C6C2323EBB48300276940 /* View Controllers */,
+				3A6C6C2823EBB4E600276940 /* Resources */,
 				3AD8EF1D23E3CB2E0059507E /* Main.storyboard */,
 				3AD8EF2023E3CB2F0059507E /* Assets.xcassets */,
 				3AD8EF2223E3CB2F0059507E /* LaunchScreen.storyboard */,
@@ -161,8 +191,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6C6C2523EBB4BC00276940 /* AddFriendViewController.swift in Sources */,
+				3A6C6C2F23EBBC6100276940 /* Friend.swift in Sources */,
 				3AD8EF1C23E3CB2E0059507E /* FriendsTableViewController.swift in Sources */,
 				3AD8EF1823E3CB2E0059507E /* AppDelegate.swift in Sources */,
+				3A6C6C2B23EBBA5C00276940 /* FriendTableViewCell.swift in Sources */,
 				3A6C6C2723EBB4D600276940 /* FriendDetailViewController.swift in Sources */,
 				3AD8EF1A23E3CB2E0059507E /* SceneDelegate.swift in Sources */,
 			);

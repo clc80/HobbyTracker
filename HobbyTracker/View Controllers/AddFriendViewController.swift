@@ -20,6 +20,7 @@ class AddFriendViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction func SaveButtonTapped(_ sender: Any) {
+        
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {

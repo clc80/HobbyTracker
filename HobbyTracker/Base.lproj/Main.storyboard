@@ -80,15 +80,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="xAi-cW-cMt" id="t00-96-BpG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="120.53571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Friend Detail View Controller-->
         <scene sceneID="Crm-Ih-1sB">
             <objects>
-                <viewController id="LSe-sq-gza" sceneMemberID="viewController">
+                <viewController id="LSe-sq-gza" customClass="FriendDetailViewController" customModule="HobbyTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jtG-mY-rYi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,15 +147,20 @@
                         <viewLayoutGuide key="safeArea" id="EP4-eP-U0a"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mux-cn-VgV"/>
+                    <connections>
+                        <outlet property="HobbyListTextView" destination="Kj5-a0-F8N" id="FMI-Bj-fkc"/>
+                        <outlet property="homeTownLabel" destination="EvW-nt-Us8" id="XEn-7a-omx"/>
+                        <outlet property="nameLabel" destination="j7V-L8-gVy" id="Mi0-Nk-x9X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y4e-cp-99f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1781.1594202898552" y="115.84821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Friend View Controller-->
         <scene sceneID="wXj-xQ-tvv">
             <objects>
-                <viewController id="6UE-6n-7XX" sceneMemberID="viewController">
+                <viewController id="6UE-6n-7XX" customClass="AddFriendViewController" customModule="HobbyTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BMU-42-ODw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,9 +210,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntI-tq-br2">
                                 <rect key="frame" x="0.0" y="759" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem title="Cancel" id="FRX-gI-yzV"/>
+                                    <barButtonItem title="Cancel" id="FRX-gI-yzV">
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="6UE-6n-7XX" id="lvL-zI-QEU"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4oM-2k-mgl"/>
-                                    <barButtonItem title="Save" id="AEc-ZS-a58"/>
+                                    <barButtonItem title="Save" id="AEc-ZS-a58">
+                                        <connections>
+                                            <action selector="saveButtonTapped:" destination="6UE-6n-7XX" id="MLc-hi-0Qf"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -219,6 +235,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZD1-IY-cFl"/>
                     </view>
+                    <connections>
+                        <outlet property="hobby1TextField" destination="Scv-Sc-WOi" id="NLT-Hf-6IZ"/>
+                        <outlet property="hobby2TextField" destination="Scv-Sc-WOi" id="aLL-Ch-6tS"/>
+                        <outlet property="hobby3TextField" destination="mra-w9-hXO" id="S62-HZ-utF"/>
+                        <outlet property="homeTownTextField" destination="yn2-aw-jZ7" id="0o3-aM-xeD"/>
+                        <outlet property="nameTextField" destination="JTL-07-3gP" id="DTd-GT-Mm3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Cd-So-g4O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

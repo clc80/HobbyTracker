@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HobbyTracker
 //
-//  Created by Claudia Contreras on 1/30/20.
+//  Created by Claudia Maciel on 1/30/20.
 //  Copyright © 2020 thecoderpilot. All rights reserved.
 //
 

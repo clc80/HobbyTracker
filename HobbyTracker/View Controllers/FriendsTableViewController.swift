@@ -42,3 +42,16 @@ extension FriendsTableViewController: UITableViewDelegate, UITableViewDataSource
         return cell
     }
 }
+
+
+//Conform to the protocol from addFriendView Controller
+extension FriendsTableViewController: AddFriendDelegate {
+    
+    //This will get called when the addFriendViewController tells us that it created a friend.
+    func friendWasCreated(friend: Friend) {
+        friends.append(friend)
+        
+        //go and call the numberOfRowsInSection/cell for Row at to create a new cell
+        tableView.reloadData()
+    }
+}

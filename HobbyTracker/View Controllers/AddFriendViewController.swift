@@ -8,7 +8,18 @@
 
 import UIKit
 
+// ******************************************************************************
+protocol AddFriendDelegate {
+    
+    //table view controller will add this function to add the newly created friend to the friends array
+    func friendWasCreated(friend: Friend)
+}
+//********************************************************************************
+
 class AddFriendViewController: UIViewController {
+    
+    //Delegate - the table view controller knows who its delegate is
+    var delegate: AddFriendDelegate?
 
     //MARK: - IBOutlets
     @IBOutlet var nameTextField: UITextField!
@@ -16,7 +27,6 @@ class AddFriendViewController: UIViewController {
     @IBOutlet var hobby1TextField: UITextField!
     @IBOutlet var hobby2TextField: UITextField!
     @IBOutlet var hobby3TextField: UITextField!
-    
     
     //MARK: - IBActions
     @IBAction func SaveButtonTapped(_ sender: Any) {
@@ -42,8 +52,9 @@ class AddFriendViewController: UIViewController {
         //make a new friend
         let newFriend = Friend(name: name, hometown: hometown, hobbies: hobbies)
         
-        //Add it to the array of friends in the tale view controller
-        
+        //Add it to the array of friends in the table view controller/delegate
+        //This controller is saying: TVC - go call the function
+        delegate?.friendWasCreated(friend: newFriend)
         
     }
     

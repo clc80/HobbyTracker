@@ -25,7 +25,7 @@ class FriendsTableViewController: UIViewController {
 }
 
 //MARK: - Extensions
-extension FriendsTableViewController: UITableViewDelegate, UITableViewDataSource {
+extension FriendsTableViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return friends.count
     }
@@ -41,7 +41,17 @@ extension FriendsTableViewController: UITableViewDelegate, UITableViewDataSource
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addFriendSegue" {
+            //We know we are going to the addFriendViewController
+            guard let addFriendVC = segue.destination as? AddFriendViewController else { return }
+            
+            addFriendVC.delegate = self
+        }
+    }
 }
+
 
 
 //Conform to the protocol from addFriendView Controller
@@ -49,7 +59,7 @@ extension FriendsTableViewController: AddFriendDelegate {
     
     //This will get called when the addFriendViewController tells us that it created a friend.
     func friendWasCreated(friend: Friend) {
-        friends.append(friend)
+        self.friends.append(friend)
         
         //go and call the numberOfRowsInSection/cell for Row at to create a new cell
         tableView.reloadData()

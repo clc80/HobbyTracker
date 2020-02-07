@@ -55,7 +55,7 @@ class AddFriendViewController: UIViewController {
         //Add it to the array of friends in the table view controller/delegate
         //This controller is saying: TVC - go call the function
         delegate?.friendWasCreated(friend: newFriend)
-        
+        self.dismiss(animated: true)
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {

@@ -79,7 +79,7 @@
                     <navigationItem key="navigationItem" title="Hobby Tracker" largeTitleDisplayMode="always" id="SMY-9V-Foe" userLabel="Hobby Tracker">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qHw-Ds-zUm">
                             <connections>
-                                <segue destination="6UE-6n-7XX" kind="presentation" id="ty0-5D-dEn"/>
+                                <segue destination="6UE-6n-7XX" kind="presentation" identifier="addFriendSegue" id="ty0-5D-dEn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -41,6 +41,4 @@ extension FriendsTableViewController: UITableViewDelegate, UITableViewDataSource
         
         return cell
     }
-    
-    
 }

@@ -13,6 +13,9 @@ class FriendsTableViewController: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet var tableView: UITableView!
     
+    //Table View Data Source
+    var friend: [Friend] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
